@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "entries": {
+    "tsconfig.json": {
+      "path": "tsconfig.json",
+      "createdAt": "2026-01-20T07:26:56.724Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "README.md": {
+      "path": "README.md",
+      "createdAt": "2026-01-20T07:26:56.731Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/index.ts": {
+      "path": "src/index.ts",
+      "createdAt": "2026-01-20T07:26:56.732Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/cache/create-cache.ts": {
+      "path": "src/cache/create-cache.ts",
+      "createdAt": "2026-01-20T07:26:56.734Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/cache/types.ts": {
+      "path": "src/cache/types.ts",
+      "createdAt": "2026-01-20T07:26:56.735Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/cache/ttl.ts": {
+      "path": "src/cache/ttl.ts",
+      "createdAt": "2026-01-20T07:26:56.736Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/cache/shallow.ts": {
+      "path": "src/cache/shallow.ts",
+      "createdAt": "2026-01-20T07:26:56.737Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/drivers/memory.ts": {
+      "path": "src/drivers/memory.ts",
+      "createdAt": "2026-01-20T07:26:56.740Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/drivers/local-storage.ts": {
+      "path": "src/drivers/local-storage.ts",
+      "createdAt": "2026-01-20T07:26:56.741Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/drivers/indexeddb.ts": {
+      "path": "src/drivers/indexeddb.ts",
+      "createdAt": "2026-01-20T07:26:56.742Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/react/use-cache-key.ts": {
+      "path": "src/react/use-cache-key.ts",
+      "createdAt": "2026-01-20T07:26:56.744Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/react/use-cache-selector.ts": {
+      "path": "src/react/use-cache-selector.ts",
+      "createdAt": "2026-01-20T07:26:56.745Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/react/use-cache-ready.ts": {
+      "path": "src/react/use-cache-ready.ts",
+      "createdAt": "2026-01-20T07:26:56.746Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/sync/broadcast.ts": {
+      "path": "src/sync/broadcast.ts",
+      "createdAt": "2026-01-20T07:26:56.748Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "tsup.config.ts": {
+      "path": "tsup.config.ts",
+      "createdAt": "2026-01-20T07:28:55.687Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/react/use-cache-prefix.ts": {
+      "path": "src/react/use-cache-prefix.ts",
+      "createdAt": "2026-01-20T07:48:41.601Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/react/use-cache.ts": {
+      "path": "src/react/use-cache.ts",
+      "createdAt": "2026-01-20T07:55:01.422Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "src/react/cache-context.tsx": {
+      "path": "src/react/cache-context.tsx",
+      "createdAt": "2026-01-20T07:58:28.445Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    }
+  }
+}
