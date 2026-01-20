@@ -126,6 +126,27 @@
       "sizeAtCreate": 0,
       "groupName": "default",
       "groupRoot": "."
+    },
+    "scripts/ensure-clean.cjs": {
+      "path": "scripts/ensure-clean.cjs",
+      "createdAt": "2026-01-20T10:37:30.774Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "scripts/postpublish.cjs": {
+      "path": "scripts/postpublish.cjs",
+      "createdAt": "2026-01-20T10:37:30.776Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
+    },
+    "scripts/bump-version.cjs": {
+      "path": "scripts/bump-version.cjs",
+      "createdAt": "2026-01-20T10:38:11.979Z",
+      "sizeAtCreate": 0,
+      "groupName": "default",
+      "groupRoot": "."
     }
   }
 }

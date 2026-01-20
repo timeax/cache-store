@@ -227,6 +227,44 @@ export const cache = createCache({
 
 ---
 
+## Basic operations
+
+### Reading and writing
+
+```ts
+// Set a value (persists asynchronously)
+cache.set("theme", "dark");
+
+// Get a value (synchronous)
+const theme = cache.get<string>("theme"); // "dark" | undefined
+
+// Check existence
+if (cache.has("theme")) { ... }
+
+// Remove
+cache.remove("theme");
+```
+
+### Updating
+
+Atomically update a value based on its previous state:
+
+```ts
+cache.update<number>("counter", (prev) => (prev ?? 0) + 1);
+```
+
+### Clearing
+
+```ts
+// Clear all keys
+cache.clear();
+
+// Clear keys starting with "auth."
+cache.clear("auth.");
+```
+
+---
+
 ## TTL / expiry behavior
 
 * If `ttlMs` is **not** provided: entry does not expire.
@@ -695,20 +733,27 @@ const session = useCacheSelector(
 
 ## Cross-tab sync (optional)
 
-`withBroadcastSync(cache, opts)` (exported as `withBroadcastSync`) lets you sync key changes across tabs using a BroadcastChannel-style approach (implementation-specific).
+`withBroadcastSync(cache, opts)` wraps your cache instance to enable cross-tab synchronization using `BroadcastChannel`.
 
-Typical usage:
+**Note:** You must use the returned `cache` wrapper for writes (`set`, `update`, `remove`) to be broadcasted to other tabs.
 
 ```ts
-import { withBroadcastSync } from "@timeax/cache-store";
+import { createCache, withBroadcastSync } from "@timeax/cache-store";
 
-withBroadcastSync(cache, { channel: "dgp-cache" });
+const originalCache = createCache({ ... });
+
+const { cache, destroy } = withBroadcastSync(originalCache, { 
+  channel: "my-app-cache" 
+});
+
+// Use 'cache' in your app / provider
+// cache.set("foo", "bar") -> broadcasts "foo" to other tabs
 ```
 
-When enabled, one tab can emit changes and others can update/emit accordingly.
+Incoming messages from other tabs will trigger `emit(key)` on the underlying cache, notifying all local listeners.
 
 ---
 
 ## License
 
-MIT (or your chosen license)
+MIT

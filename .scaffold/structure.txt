@@ -2,6 +2,10 @@ package.json
 tsconfig.json
 tsup.config.ts
 README.md
+scripts/
+  ensure-clean.cjs
+  postpublish.cjs
+  bump-version.cjs
 src/
   index.ts
   cache/

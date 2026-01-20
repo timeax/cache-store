@@ -33,7 +33,9 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "node ./scripts/ensure-clean.cjs && npm run typecheck && npm run build",
+    "postpublish": "node ./scripts/postpublish.cjs"
   },
   "peerDependencies": {
     "react": ">=18"
